@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 80%;
+    max-height: 700px;
+    margin: 0 auto;
+}
+
+.slider img{
+    display: none;
+    max-width: 50%;
+    max-height:500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* border-radius: 12px; */
+}
+
+.bullet-nav{
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.bullet-nav span{
+    width: 16px;
+    float: left;
+    height: 16px;
+    border-radius: 8px;
+    margin: 20px;
+    background: #ccc;
+    cursor: pointer;
+}
